@@ -1,0 +1,30 @@
+<%-include('/Users/kritimathur/capstone/session_management/views/common/header.ejs')-%>
+
+    <div class="row login">
+        <h3 class="heading">Session Login Logout</h3><br/>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-nd-6">
+    <form autocomplete="off" action="/login-user" method="post">
+        <div class="mb-3">
+             <label class="form-label"> User Name </Label>
+            <input type="text" class="forn-control" name="userName" value="">
+        </div>
+
+       <div class="mb-3">
+        <label class="form-label"> Password </Label>
+       <input type="password" class="forn-control" name="password" autocomplete="off">
+   </div>
+   
+
+    <br/>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a href="/add"> <button type="button" id="addUserBtn" class="btn btn-success">Add User</button>
+    </a>
+    </form>
+</div>
+</div>
+
+
+    <%- include('/Users/kritimathur/capstone/session_management/views/common/footer.ejs') -%>
